@@ -481,7 +481,7 @@ public class hellw {  // Class names should start with an uppercase letter
         }
 
  */
-
+/*
         String[] foods;
         int size ;
 
@@ -502,6 +502,26 @@ public class hellw {  // Class names should start with an uppercase letter
        for (String food : foods){
            System.out.println(food);
        }
+
+ */
+        int[] number = { 1 , 2 , 3 , 4 , 5};
+        int terget = 3 ;
+        boolean isFound= false;
+
+
+        for (int i = 0 ; i < number.length ; i++){
+            if (terget == number[i]){
+                System.out.println("this the result : " + i );
+                isFound = true ;
+
+                break;
+
+            }
+        }
+        if (!isFound){
+            System.out.println("Element is not found in the array !!");
+        }
+
 
     }
 }
