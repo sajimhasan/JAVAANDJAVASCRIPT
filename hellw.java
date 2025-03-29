@@ -504,14 +504,19 @@ public class hellw {  // Class names should start with an uppercase letter
        }
 
  */
+
+        // this the array funtion
+        /*
         int[] number = { 1 , 2 , 3 , 4 , 5};
-        int terget = 3 ;
+        String[] fruit = {"apple" , "orrege" , "bangi " , "banana " , "this the manai maian apple "};
+       String terget  ;
         boolean isFound= false;
 
-
+        System.out.println("Enter you favorite frute : ");
+        terget = scanner.nextLine();
         for (int i = 0 ; i < number.length ; i++){
-            if (terget == number[i]){
-                System.out.println("this the result : " + i );
+            if (fruit[i].equals(terget)){
+                System.out.println("Element is founded!! this frute index is the :"+ i );
                 isFound = true ;
 
                 break;
@@ -522,6 +527,62 @@ public class hellw {  // Class names should start with an uppercase letter
             System.out.println("Element is not found in the array !!");
         }
 
+         */
+       /* System.out.println(add());
 
+    }
+    static double  add(double... numbers){
+        double  sum = 0 ;
+        if (numbers.length == 0){
+            return 0 ;
+        }
+
+        for (double number : numbers ){
+            sum += number ;
+        }
+        return sum  / numbers.length;
+
+        */
+        // 2D array
+     /*
+        String[] fruit = {"apple" , "orege" , "banana"};
+        String[] vagetibles = {"potato" , "onion" , "carot" };
+        String[] meats={"chicken" , "beef"};
+        //same thing !!
+
+       // String[][] grocrice ={ fruit , vagetibles , meats};
+         String[][] grocrice ={  {"apple" , "orege" , "banana"},
+                 {"potato" , "onion" , "carot" },
+                 {"chicken" , "beef"}};
+
+         grocrice[0][2] = "Eggs";
+         //for the pogition!!
+
+        for (String[] foods : grocrice){
+           for (String food: foods){
+               System.out.print(food+" ");
+           }
+            System.out.println();
+        }
+
+      */
+         // make a telephone number !!
+/*
+        char[][] telephone= {{'1', '2' , '3'},
+                              {'4', '5' , '6'},
+                              {'7', '8' , '9'},
+                              {'*' ,'0' ,'#'}};
+
+        for (char[] row :telephone ){
+           for (char number: row){
+               System.out.print(number+ " ");
+
+           }
+            System.out.println();
+        }
+
+ */
+
+        
     }
 }
